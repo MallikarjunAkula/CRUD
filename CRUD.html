@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CRUD</title>		
+	</head>
+	<body>
+		<div class="container mt-5"> 
+		<div class="row">
+			<form class="col-sm-5" id="inputForm">
+				<h3 class="alert-warning text center mb-5 p-3" align="center">Item Details</h3>
+				<div align="center">
+					<label for="ItemID" class="form-label">Item ID </label>
+					<input type="text" id="ItemID" class="form-control" autofocus></div>
+				<div align="center">
+					<label for="ItemName" class="form-label">Item Name </label>
+					<input type="text" id="ItemName" class="form-control"></div>
+				<div align="center">
+					<label for="SupplierID" class="form-label">Supplier ID </label>
+					<input type="text" id="SupplierID" class="form-control"></div>
+				<div align="center">
+					<label for="StockQty" class="form-label">Stock Quantity </label>
+					<input type="text" id="StockQty" class="form-control"></div>
+				<div align="center">
+					<label for="UnitPrice" class="form-label">Item Price </label>
+					<input type="text" id="UnitPrice" class="form-control"></div>
+				<div class="mt-5" align="center">
+					<button type="submit" class="btn btn-primary" id="saveBtn">Submit</button></div>
+				<div id="ack"></div>
+			</form>
+		<div class="col-sm-7 text-center">
+			<table class="table" align="center">
+				<thead>
+					<tr>
+						<th scope="col">Item ID</th>
+						<th scope="col">Item Name</th>
+						<th scope="col">Supplier ID</th>
+						<th scope="col">Stock Quantity</th>
+						<th scope="col">Unit Price</th>
+						<th scope="col">Edit</th>
+						<th scope="col">Delete</th>
+					</tr>
+				</thead>
+				<tbody id="displayArea"></tbody>
+			</table>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+		<script type="text/javascript" src="CRUD.js"></script>
+	</body>
+</html>
